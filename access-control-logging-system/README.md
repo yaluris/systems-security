@@ -1,8 +1,3 @@
-*************READ ME*************
-
-Gialouris Georgios 2019030063
-Emmanouilidis Ioannis 2019030036
-
 In the test_aclog.c file, we execute the functions fopen and fwrite (that we have overwritten in logger.c) 
 under various conditions, to fill up the file_logging.log file.
 
