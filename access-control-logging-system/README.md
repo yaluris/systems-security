@@ -9,7 +9,7 @@ In the acmonitor.c, we have developed an Access Control Log Monitoring tool that
 can either print all users that tried to access more than 7 different files without having permissions 
 (malicious users), or print a table with the number of times each user has modified a given file.
 
-Program execution example:
+Program execution example:  
 make clean  
 make all  
 make run  
