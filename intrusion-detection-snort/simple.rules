@@ -1,0 +1,4 @@
+alert icmp any any -> any any (msg:"ICMP connection attempt detected"; sid:10001; rev:1;)
+alert ip any any -> any any (msg:"String hello detected"; content:"hello"; sid:10002; rev:1;)
+alert ip any 1025: -> any 1025: (msg:"Non root ports detected"; sid:10003; rev:1;)
+alert tcp any any -> any 22 (msg:"SSH brute force attack detected"; flow:established,to_server; content:"SSH",nocase,offset 0,depth 4; detection_filter:track by_src,count 10,seconds 600; sid:10004; rev:1;)
