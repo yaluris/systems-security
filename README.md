@@ -7,3 +7,4 @@ A collection of small projects from the Systems and Services Security course.
 - [Assignment 4: Network Traffic Monitoring in C with libpcap](./network-traffic-monitoring)
 - [Assignment 5: A Simple Adblocking Mechanism using iptables](./adblocker)
 - [Assignment 6: An Introduction to Intrusion Detection Systems using Snort](./intrusion-detection-snort)
+- [Assignment 7: Exploiting a Buffer Overflow Vulnerability in a C Program](./buffer-overflow-exploitation)
