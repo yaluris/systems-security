@@ -10,8 +10,8 @@ can either print all users that tried to access more than 7 different files with
 (malicious users), or print a table with the number of times each user has modified a given file.
 
 Program execution example:
-make clean
-make all
-make run
-./acmonitor -m
+make clean  
+make all  
+make run  
+./acmonitor -m  
 ./acmonitor -i file_0
