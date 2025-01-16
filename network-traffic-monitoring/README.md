@@ -10,12 +10,12 @@ in use. Non TCP or UDP protocols may have varying header formats, including the 
 size of the ports' fields.
 
 
-Q: Find where the payload is in memory.
+Q: Find where the payload is in memory.  
 A: In order to calculate the payload location in memory, we have to get past the ethernet, 
    IP, and TCP/UDP layer, by taking into consideration the size of those elements, based on 
    the packet's IP version (IPv4/IPv6), and protocol.
 
-Q: Can you tell if an incoming TCP packet is a retransmission? If yes, how? If not, why?
+Q: Can you tell if an incoming TCP packet is a retransmission? If yes, how? If not, why?  
 A: Yes. For an incoming packet to be a retransmission of a previous one, they need to 
    belong to the same network flow and the new one must have a sequence number less than
    or equal to the sequence number of the previous one. In practice, the implementation 
@@ -23,14 +23,14 @@ A: Yes. For an incoming packet to be a retransmission of a previous one, they ne
    to evaluate multiple additional factors, such as their acknowledgment numbers and TCP 
    flags, timing information, etc.
 
-Q: Can you tell if an incoming UDP packet is a retransmission? If yes, how? If not, why?
+Q: Can you tell if an incoming UDP packet is a retransmission? If yes, how? If not, why?  
 A: No. UDP is a connectionless protocol and so we can’t detect lost packets. Therefore, 
    retransmission of the lost packets is not possible.
 
 
-Program execution examples:
-sudo ./pcap_ex -i eth0 (save the packets in log.txt)
-sudo ./pcap_ex -i eth0 -f "port 8080"
-sudo ./pcap_ex -r test_pcap_5mins.pcap (print the outputs in terminal)
-sudo ./pcap_ex -r test_pcap_5mins.pcap -f "port 8080"
-sudo ./pcap_ex -h 
+Program execution examples:  
+sudo ./pcap_ex -i eth0 (save the packets in log.txt)  
+sudo ./pcap_ex -i eth0 -f "port 8080"  
+sudo ./pcap_ex -r test_pcap_5mins.pcap (print the outputs in terminal)  
+sudo ./pcap_ex -r test_pcap_5mins.pcap -f "port 8080"  
+sudo ./pcap_ex -h  
