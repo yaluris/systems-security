@@ -1,8 +1,3 @@
-*************READ ME*************
-
-Gialouris Georgios 2019030063
-Emmanouilidis Ioannis 2019030036
-
 This script is responsible for creating a simple adblock mechanism. It rejects connections from specific 
 domain names or IPv4/IPv6 addresses using iptables/ip6tables.
 
@@ -10,13 +5,13 @@ To run the script, you need to grant exetutable privilidges to the .sh file, by 
 using chmod +x adblock.sh. Then, in order to run it, type in the command sudo bash adblock.sh,
 followed by one of the options below:
 
-  -domains        Configure adblock rules based on the domain names of 'domainNames.txt' file.
-  -ips            Configure adblock rules based on the IP addresses of 'IPAddresses.txt' file.
-  -save           Save rules to 'adblockRules' file.
-  -load           Load rules from 'adblockRules' file.
-  -list           List current rules.
-  -reset          Reset rules to default settings (i.e. accept all).
-  -help           Display this help and exit.
+  -domains        Configure adblock rules based on the domain names of 'domainNames.txt' file.  
+  -ips            Configure adblock rules based on the IP addresses of 'IPAddresses.txt' file.  
+  -save           Save rules to 'adblockRules' file.  
+  -load           Load rules from 'adblockRules' file.  
+  -list           List current rules.  
+  -reset          Reset rules to default settings (i.e. accept all).  
+  -help           Display this help and exit.  
 
 The adblocker will block incoming packets from a list of domains/IPs given by the user. In practice,
 the mechanism might fail to block certain ads, due to various factors, such as:
