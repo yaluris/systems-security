@@ -1,8 +1,3 @@
-*************READ ME*************
-
-Gialouris Georgios 2019030063
-Emmanouilidis Ioannis 2019030036
-
 For this assignment we used Snort-3, an IDS/IPS solution, to run a set of rules that will produce 
 an alert when the scanned traffic matches them.
 
