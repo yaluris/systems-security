@@ -1,9 +1,3 @@
-**************READ ME**************
-
-Gialouris Georgios 2019030063
-Emmanouilidis Ioannis 2019030036
-
-
 For this assignment, we created a networking monitoring tool, based on the C programming
 language. The tool is capable of capturing packets in two modes (online and offline), 
 decode the TCP/UDP ones that follow the IPv4/IPv6 protocol and print their info, and will
